@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-light': '#03fe86',
+                        'primary-dark': '#bff47b',
+                        'secondary-light': '#0dd354',
+                        'secondary-dark': '#35ae2a',
+                        'secondary-medium':'#03e245'
+                    },
+                    backgroundImage: {
+                        'particle-image': "url('https://m.media-amazon.com/images/I/816bjexB9TL.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+        
+        @layer utilities {
+            .toggle-checkbox:checked ~ .sign-in {
+                @apply translate-x-full;
+            }
+            .toggle-checkbox:checked ~ .sign-up {
+                @apply translate-x-full opacity-100 z-[5];
+                animation: move 0.5s;
+            }
+            .toggle-checkbox:checked ~ .toggle-container {
+                @apply -translate-x-full rounded-r-[150px] rounded-l-[0px];
+            }
+            .toggle-checkbox:checked ~ .toggle-container .toggle {
+                @apply translate-x-1/2;
+            }
+            .toggle-checkbox:checked ~ .toggle-container .toggle-left {
+                @apply translate-x-0;
+            }
+            .toggle-checkbox:checked ~ .toggle-container .toggle-right {
+                @apply translate-x-full;
+            }
+            @keyframes move {
+                0%, 49.99% {
+                    @apply opacity-0 z-[1];
+                }
+                50%, 100% {
+                    @apply opacity-100 z-[5];
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex items-center justify-center min-h-screen font-montserrat">
+    <div class="container bg-white rounded-[30px] shadow-lg relative overflow-hidden w-[768px] max-w-full min-h-[480px]">
+        <input type="checkbox" id="toggle" class="toggle-checkbox hidden">
+        <div class="form-container sign-in absolute top-0 h-full transition-all duration-600 ease-in-out left-0 w-1/2 z-[2]">
+            <form class="bg-white flex flex-col items-center justify-center h-full px-10">
+                <h1 class="text-3xl font-bold mb-4">Sign In</h1>
+                <div
+            id="third-party-auth"
+            class="flex items-center justify-center mb-5 flex-wrap"
+          >
+           <a href="https://www.google.co.in/"
+           class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1 "
+           target=_blank
+         >
+           <img
+             class="max-w-[30px]"
+             src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/"
+             alt="Google"
+           /></a>
+            <a href="https://www.facebook.com/login/"
+                class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                target=_blank
+              >
+                <img
+                  class="max-w-[30px]"
+                  src="https://ucarecdn.com/6f56c0f1-c9c0-4d72-b44d-51a79ff38ea9/"
+                  alt="Facebook"
+                /></a>
+           <a href="https://www.icloud.com/" class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1 " target=_blank>
+                <img
+                  class="max-w-[30px]"
+                  src="https://ucarecdn.com/3277d952-8e21-4aad-a2b7-d484dad531fb/"
+                  alt="apple"
+                /></a>
+          </div>
+                <span class="text-base mb-4">or use your email password</span>
+                <input type="email" placeholder="Email" class="bg-gray-100 border-none rounded-lg px-4 py-2 mb-4 w-full text-base">
+                <input type="password" placeholder="Password" class="bg-gray-100 border-none rounded-lg px-4 py-2 mb-4 w-full text-base">
+                <a href="#" class="text-sm mb-4">Forgot your password?</a>
+                <button class="bg-secondary-dark text-white text-base py-2 px-11 rounded-lg font-semibold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-light">Sign In</button>
+            </form>
+        </div>
+        <div class="form-container sign-up absolute top-0 h-full transition-all duration-900 ease-in-out left-0 w-1/2 opacity-0 z-[1]">
+            <form class="bg-white flex flex-col items-center justify-center h-full px-10">
+                <h1 class="text-3xl font-bold mb-4">Create Account</h1>
+                <div
+            id="third-party-auth"
+            class="flex items-center justify-center mb-5 flex-wrap"
+          >
+           <a href="https://www.google.co.in/"
+           class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+           target="_blank"
+         >
+           <img
+             class="max-w-[30px]"
+             src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/"
+             alt="Google"
+           /></a>
+            <a href="https://www.facebook.com/login/"
+                class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1"
+                target="_blank"
+              >
+                <img
+                  class="max-w-[30px]"
+                  src="https://ucarecdn.com/6f56c0f1-c9c0-4d72-b44d-51a79ff38ea9/"
+                  alt="Facebook"
+                /></a>
+           <a href="https://www.icloud.com/" class="hover:scale-125 ease-in-out duration-300 shadow-lg p-2 rounded-lg m-1 " target=_blank>
+                <img
+                  class="max-w-[30px]"
+                  src="https://ucarecdn.com/3277d952-8e21-4aad-a2b7-d484dad531fb/"
+                  alt="apple"
+                /></a>
+          </div>
+                <span class="text-base mb-4">or use your email for registration</span>
+                <input type="text" placeholder="Name" class="bg-gray-100 border-none rounded-lg px-4 py-2 mb-4 w-full text-base">
+                <input type="email" placeholder="Email" class="bg-gray-100 border-none rounded-lg px-4 py-2 mb-4 w-full text-base">
+                <input type="password" placeholder="Password" class="bg-gray-100 border-none rounded-lg px-4 py-2 mb-4 w-full text-base">
+                <button class="bg-secondary-dark text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-light">Sign Up</button>
+            </form>
+        </div>
+        <div class="toggle-container absolute top-0 left-1/2 w-1/2 h-full overflow-hidden transition-all duration-1000 ease-in-out rounded-l-[150px] z-[1000]">
+            <div class="toggle bg-gradient-to-r from-secondary-light to-secondary-dark text-white relative -left-full h-full w-[200%] transform-none transition-all duration-1000 ease-in-out">
+                <div class="toggle-panel toggle-left absolute w-1/2 h-full flex flex-col items-center justify-center px-7 text-center top-0 -translate-x-full transition-all duration-800 ease-in-out">
+                    <h1 class="text-4xl font-bold mb-4">Welcome Back!</h1>
+                    <p class="text-base font-xbold mb-4">Sign in to access your account and enjoy all the features of our platform.</p>
+                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-medium">Sign In</label>
+                </div>
+                <div class="toggle-panel toggle-right absolute w-1/2 h-full flex flex-col items-center justify-center px-7 text-center top-0 right-0 transition-all duration-800 ease-in-out">
+                    <h1 class="text-4xl font-bold mb-4">Hello, Friend!</h1>
+                    <p class="text-base mb-4 font-xbold">Sign up now to access all features and enjoy a seamless experience across our platform.</p>
+                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-medium">Sign Up</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
