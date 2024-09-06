@@ -1,11 +1,5 @@
 /* General Styles */
-<<<<<<< HEAD
-* {
-    font-family: "Tajawal", sans-serif;
-    margin: 0;
-    padding: 0;
-    /* color: #333; */
-=======
+
 *{
     margin: 0px;
     padding: 0px;
@@ -13,7 +7,7 @@
 body {
     font-family: "Tajawal", sans-serif;
     color: #333;
->>>>>>> 65586475c8f9cbb2feb566721be589f7c76c0d3f
+
 }
 
 
