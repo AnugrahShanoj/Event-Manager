@@ -12,12 +12,55 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Island+Moments&family=Lovers+Quarrel&family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
 
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">    
+        <style>
+
+            .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 10s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+}
+
+.carousel-images {
+    animation: slide 15s infinite;
+}
+        </style>
+        
     </head>
 
-    <body class="bg-gray-100 text-gray-800 font-sans">
-
+    <body class="bg-gray-100 text-gray-800 font-sans ">
+<header>
         <!-- Navigation Bar -->
-        <nav class="bg-blue-50 text-black p-4" style="position: sticky; top: 0px;">
+        <nav  class="bg-blue-50 text-black p-4" style="position: sticky; top: 0px; z-index: 1;">
             <div class="container mx-auto flex justify-between items-center">
                 <!-- Logo and Website Name -->
                 <div class="flex items-center">
@@ -36,15 +79,49 @@
             </div>
         </nav>
 
+        <!-- Carousel Section -->
+<section class="carousel-container relative mt-8">
+    <div class="carousel">
+        <div class="carousel-images">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2016/11/18/18/32/wedding-1836315_1280.jpg" alt="Slide 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2019/11/27/09/32/beach-4656456_1280.jpg" alt="Slide 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2019/10/15/03/16/black-and-white-4550471_1280.jpg" alt="Slide 3">
+            </div>
+            <!-- Add more slides as needed -->
+             <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2022/08/02/18/30/birthday-party-7361026_640.jpg" alt="Slide 4">
+             </div>
+             <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2017/12/13/11/56/holiday-3016613_1280.jpg" alt="slide 5">
+             </div>
+             <div class="carousel-slide">
+                <img src="https://cdn.pixabay.com/photo/2016/08/19/14/02/wedding-1605322_640.jpg" alt="slide 6">
+             </div>
+        </div>
+    </div>
+</section>
+      
+
         <!-- Hero Section -->
         <section class="bg-blue-50 text-black text-center py-16">
             <div class="container mx-auto">
+            
                 <h2 class="text-6xl font-bold" style="font-family: Island Moments, cursive;">Welcome to Eventura</h2>
                 <p class="mt-4 text-lg text-4xl" style="font-family: Island Moments, cursive;">Your ultimate solution for managing and booking events effortlessly.</p>
             </div>
         </section>
+       
+    </header>
 
-         
+
         <div class="mb-12">
             <div class="container mx-auto p-8">
                 <div class="flex flex-col lg:flex-row items-center mx-200">
