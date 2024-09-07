@@ -13,14 +13,15 @@
                         'montserrat': ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        'primary-light': '#03fe86',
+                        'primary-light': '#F5F5DC',
                         'primary-dark': '#bff47b',
-                        'secondary-light': '#0dd354',
-                        'secondary-dark': '#35ae2a',
+                        'secondary-light': '#0223a5',
+                        'secondary-dark': '#010d48',
                         'secondary-medium':'#03e245'
+                        
                     },
                     backgroundImage: {
-                        'particle-image': "url('https://m.media-amazon.com/images/I/816bjexB9TL.jpg')",
+                        'particle-image': "url('https://imgcdn.stablediffusionweb.com/2024/9/7/4dead11b-01bd-478b-b799-e62a7c0fd0db.jpg')",
                     },
                 },
             },
@@ -60,12 +61,12 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex items-center justify-center min-h-screen font-montserrat">
-    <div class="container bg-white rounded-[30px] shadow-lg relative overflow-hidden w-[768px] max-w-full min-h-[480px]">
+<body class="bg-particle-image bg-cover bg-top flex items-center justify-center min-h-screen font-montserrat">
+    <div class="container bg-white rounded-[30px] shadow-lg relative overflow-hidden w-[868px] max-w-full min-h-[580px]">
         <input type="checkbox" id="toggle" class="toggle-checkbox hidden">
         <div class="form-container sign-in absolute top-0 h-full transition-all duration-600 ease-in-out left-0 w-1/2 z-[2]">
             <form class="bg-white flex flex-col items-center justify-center h-full px-10">
-                <h1 class="text-3xl font-bold mb-4">Sign In</h1>
+                <h1 class="text-4xl font-bold mb-4">Sign In</h1>
                 <div
             id="third-party-auth"
             class="flex items-center justify-center mb-5 flex-wrap"
@@ -104,7 +105,7 @@
         </div>
         <div class="form-container sign-up absolute top-0 h-full transition-all duration-900 ease-in-out left-0 w-1/2 opacity-0 z-[1]">
             <form class="bg-white flex flex-col items-center justify-center h-full px-10">
-                <h1 class="text-3xl font-bold mb-4">Create Account</h1>
+                <h1 class="text-4xl font-bold mb-4">Create Account</h1>
                 <div
             id="third-party-auth"
             class="flex items-center justify-center mb-5 flex-wrap"
@@ -146,12 +147,12 @@
                 <div class="toggle-panel toggle-left absolute w-1/2 h-full flex flex-col items-center justify-center px-7 text-center top-0 -translate-x-full transition-all duration-800 ease-in-out">
                     <h1 class="text-4xl font-bold mb-4">Welcome Back!</h1>
                     <p class="text-base font-xbold mb-4">Sign in to access your account and enjoy all the features of our platform.</p>
-                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-medium">Sign In</label>
+                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-light">Sign In</label>
                 </div>
                 <div class="toggle-panel toggle-right absolute w-1/2 h-full flex flex-col items-center justify-center px-7 text-center top-0 right-0 transition-all duration-800 ease-in-out">
                     <h1 class="text-4xl font-bold mb-4">Hello, Friend!</h1>
                     <p class="text-base mb-4 font-xbold">Sign up now to access all features and enjoy a seamless experience across our platform.</p>
-                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-medium">Sign Up</label>
+                    <label for="toggle" class="bg-transparent border border-white text-white text-base py-2 px-11 rounded-lg font-bold uppercase tracking-wider mt-2 cursor-pointer hover:bg-secondary-light">Sign Up</label>
                 </div>
             </div>
         </div>
