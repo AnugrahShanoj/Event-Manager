@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 #p1 {
-    color: rgb(25, 109, 25);
+    color:  #FFF7E0;
     font-family: "Dancing Script", cursive;
     font-size: larger;
     animation-duration: 2s;
     animation-name: paragraph;
 
 }
+
 
 @keyframes paragraph {
     from {
@@ -20,8 +21,9 @@
 }
 
 #h1 {
-    font-family: "Dancing Script", cursive;
-    color: rgb(25, 109, 25);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color:  #FFF7E0;
 }
 
 .animation {
@@ -40,16 +42,16 @@
 }
 
 button[type="submit"] {
-    background-color: rgb(25, 109, 25);
+    background-color:  #1A2A3A;
 }
 
 button[type="submit"]:hover {
-    background-color: rgb(30, 130, 30);
+    background-color: #1A2A3A;
 }
 
 #info {
     font-family: "Dancing Script", cursive;
-    color: rgb(25, 109, 25);
+    color: #1A2A3A;
 }
 
 .containerrec {
@@ -95,5 +97,10 @@ button[type="submit"]:hover {
 
 .take {
     font-family: "Dancing Script", cursive;
-    color: rgb(25, 109, 25);
+    color:  #FFF7E0;
+}
+body{
+    background-color: #1A2A3A;
+
+
 }

@@ -1,9 +1,10 @@
 /* General Styles */
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 body {
     font-family: "Tajawal", sans-serif;
     color: #333;
@@ -16,130 +17,76 @@ body {
 
 
 section.services {
-    background: url(''https://c1.wallpaperflare.com/preview/829/12/930/beach-wedding-venue-preparation-sea-ocean.jpg') no-repeat center center fixed;
-    background-size: cover;
-    padding: 100px 20px;
-    color: white;
-}
+    background: url('https: //c1.wallpaperflare.com/preview/829/12/930/beach-wedding-venue-preparation-sea-ocean.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 100px 20px;
+            color: white;
+    }
 
-section.services .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
+    section.services .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-section.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
+    section.services h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
 
-.service-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
+    .service-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
 
-.service {
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 300px;
-    flex: 1 1 calc(50% - 40px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+    .service {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 300px;
+        flex: 1 1 calc(50% - 40px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-.service img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
+    .service img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
 
-.service h3 {
-    font-size: 1.8em;
-    margin-top: 15px;
-}
+    .service h3 {
+        font-size: 1.8em;
+        margin-top: 15px;
+    }
 
-.service p {
-    font-size: 1em;
-    line-height: 1.5;
-}
+    .service p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
 
-.service:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
+    .service:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
 
-footer {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
-}
+    footer {
+        background: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
 
-footer a {
-    color: #f1c40f;
-    text-decoration: none;
-}
+    footer a {
+        color: #f1c40f;
+        text-decoration: none;
+    }
 
-footer a:hover {
-    text-decoration: underline;
-}
+    footer a:hover {
+        text-decoration: underline;
+    }
 
-  
-  .review-card img {
-      max-width: 50px;
-      width: 70px;
-      height: 60px;
-      border-radius: 50%;
-      margin: 20px;
-  }
-  
- 
-  
-  .review-card {
-      background: linear-gradient(to right, hsl(139, 91%, 42%),hsl(126, 82%, 56%));
-      border: 2px solid rgb(255, 255, 255);
-  
-  }
-  
-  .review-card:hover {
-      transform: scale(1.4);
-      z-index: 2;
-  }
-  
-  #heading {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      text-transform: capitalize;
-      color: hsl(139, 98%, 37%);
-      line-height: 1.2;
-  }
-  
-  .sub {
-      font-family: "Dancing Script", cursive;
-      color:  hsl(139, 98%, 37%);
-  }
-  .thalavara {
-      animation-duration: 2s;
-      animation-name: slidin;
-  }
-  
-  @keyframes slidin {
-      from {
-          margin-right: 100%;
-      }
-  
-      to {
-          margin-right: 0%;
-      }
-  }
-  
-  #carouselExample {
-      background: linear-gradient(to right, hsl(139, 98%, 37%),hsl(119, 78%, 56%));
-  }
-  
-  .carousel {
-      background: linear-gradient(to right, hsl(139, 98%, 37%),hsl(119, 78%, 56%));
-  }
+
+    
