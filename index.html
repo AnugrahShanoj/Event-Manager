@@ -14,6 +14,12 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">    
         <style>
 
+  .hover-card:hover {
+    transform: scale(1.5); /* Enlarge the card to 105% of its size */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+  }
+
+
             .carousel-container {
     position: relative;
     overflow: hidden;
@@ -38,7 +44,7 @@
 
 .carousel-slide img {
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
 
 @keyframes slide {
@@ -136,7 +142,7 @@
             
                   <!-- Text Section -->
                   <div class="lg:w-1/2 lg:pl-12">
-                    <h1 class="text-4xl font-serif text-gray-900 mb-4">
+                    <h1 class="text-4xl font-serif text-gray-900 mb-4 ">
                       "It’s All In The Details!" – My Motto
                     </h1>
                     <p class="italic text-lg mb-6">
@@ -168,7 +174,7 @@
               <!-- CARDS... -->
               <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 mt-12 mx-auto mb-12">
                 <!-- Card 1 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2019/05/24/18/41/marriage-4226896_640.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -178,7 +184,7 @@
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2020/05/05/19/58/play-5134828_960_720.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -188,7 +194,7 @@
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2016/03/14/14/21/bride-1255520_640.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -198,7 +204,7 @@
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2023/05/26/12/31/couple-8019370_640.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -208,7 +214,7 @@
                 </div>
                 
                 <!-- Card 5 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2016/11/29/04/28/wedding-1867318_1280.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -218,7 +224,7 @@
                 </div>
                 
                 <!-- Card 6 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                   <a href="#">
                     <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2019/03/26/02/51/woman-4081760_1280.jpg" alt="" style="width: 100%; height: 400px;" />
                   </a>
@@ -227,7 +233,7 @@
                   </div>
                 </div>
                 <!-- card 7 -->
-                <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2022/05/17/01/31/marriage-7201450_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
@@ -236,7 +242,7 @@
                     </div>
                   </div>
                   <!-- Card 8 -->
-                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2022/10/27/07/13/wedding-7550227_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
@@ -245,7 +251,7 @@
                     </div>
                   </div>
                   <!-- Card 9 -->
-                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2021/01/19/03/16/wedding-5929956_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
@@ -254,7 +260,7 @@
                     </div>
                   </div>
                   <!-- Card 10 -->
-                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2017/08/01/15/23/bride-2566244_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
@@ -263,7 +269,7 @@
                     </div>
                   </div>
                   <!-- Card 11 -->
-                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2020/09/19/09/40/sunset-5584004_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
@@ -272,7 +278,7 @@
                     </div>
                   </div>
                   <!-- Card 12 -->
-                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow ">
+                  <div class="bg-white-200 border border-gray-200 rounded-lg shadow hover-card">
                     <a href="#">
                       <img class="rounded-t-lg" src="https://cdn.pixabay.com/photo/2023/03/14/23/56/kids-7853414_640.jpg" alt="" style="width: 100%; height: 400px;" />
                     </a>
